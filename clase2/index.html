@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="js/miCodigo.js"></script>
+        <script>
+            // Declaracion de variables
+            var precioProducto1  = 44, precioProducto2 = 88;
+
+            // Forzar variable de string o Int
+            var total = precioProducto1.toString() + parseInt(precioProducto2);
+
+            /* Operaciones */
+            // Resta
+            var resta = precioProducto2 - precioProducto1;
+
+            // multiplo
+            var multiplo = 2 * precioProducto1;
+            // division
+            var division = precioProducto2 / 2;
+            // modulo
+            var modulo = precioProducto2 % 56; 
+            // suma 1
+            precioProducto2++;
+            // resta 1
+            precioProducto1--;
+            // exponencia
+            precioProducto2 ** 5;
+            // ejemplo de operacion convinada
+            var totalTemporal = (precioProducto1 * 3) / precioProducto2; 
+
+            // variable objeto
+            var estudiantes = {nombre: "Jorge", apellido : "torres"}
+            // para debuguear
+            console.log('ESTUANTES =====> ', estudiantes);
+
+            // asignar a variable el resultado del metodo
+            let totalSumaDosNumeros = sumarDosVariables(55, 99);
+            // otra forma para debuguear
+            alert('El total de la suma => ' + totalSumaDosNumeros);
+
+        </script>
+
+
+    </head>
+<body>
+<input placeholder="Numero uno" type="text" name="txtNumberOne" id="txtNumberOne">
+<input placeholder="Nuero dos" type="text" name="txtNumberTwo" id="txtNumberTwo">
+<!-- se llama la funcion para procesar en el evento on click del boton o elemento del html-->
+<input onclick="procesarInfo()" type="button" value="Enviar"/>
+<div id="divResultado"></div>
+</body>
+</html>
