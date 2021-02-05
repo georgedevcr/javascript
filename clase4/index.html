@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script src="js/clase4.js"></script>
+    </head>
+    <style>
+        a{
+            cursor: pointer;
+            font-weight: bolder;
+            color: red;
+        }
+    </style>
+<body>
+</body>
+<a onclick="deleteElement()">X</a>
+<ul>
+    <li>UNO </li>
+    <li id="divAeliminar">DOS</li>
+    <li>TRES</li>
+</ul>
+
+<h2>Otra forma de borrar</h2>
+<ul>
+    <li id="divAeliminar-1" >UNO <a onclick="deleteOneElement(1)">X</a></li>
+    <li id="divAeliminar-ab" >DOS <a onclick="deleteOneElement('ab')">X</a></li>
+    <li id="divAeliminar-3" >TRES <a onclick="deleteOneElement(3)">X</a></li>
+</ul>
+
+<h2>Evento onchange</h2>
+<label>Agrega elemento con onchange</label>
+<select onchange="addElement(this.value)">
+    <option>Seleccione</option>
+    <option value="agregar">Agregar Elemento</option>
+    <option value="ejecutarOtraCosa">otra</option>
+</select>
+<div id="divParaAgrega"></div>
+<div id="divPadre"></div>
+<div id="divParaAgregarTitulo"></div>
+</html>
