@@ -64,3 +64,24 @@ otraFuncion = (miParametro) => {
 
  }
 
+ //mouseover
+ //funcion para mostrar bton cuando ingresar el mouse
+function mostrarBoton(){
+   document.getElementById('contenedorBoton').innerHTML = "<button>Mi boton</button>"
+}
+
+//FUNCION PARA ELIMINAR EL BOTON CUANDO EL MOUSE SALE
+function ocultarBoton(){
+   document.getElementById('contenedorBoton').remove(); 
+}
+
+function mostrarValorInput(){
+   const variableInput = document.getElementById('textInput').value;
+
+   alert(variableInput);
+}
+
+function funcionCuandoLaPagCarga(){
+   alert("Hola mundo");
+}
+
