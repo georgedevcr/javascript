@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="js/clase4.js"></script>
+    </head>
+    <style>
+        a{
+            cursor: pointer;
+            font-weight: bolder;
+            color: red;
+        }
+    </style>
+<body onload="funcionCuandoLaPagCarga()">
+    <a onclick="deleteElement()">X</a>
+<ul>
+    <li>UNO </li>
+    <li id="divAeliminar">DOS</li>
+    <li>TRES</li>
+</ul>
+
+<h2>Otra forma de borrar</h2>
+<ul>
+    <li class="miClase" id="divAeliminar-1" >UNO <a onclick="deleteOneElement(1)">X</a></li>
+    <li id="divAeliminar-ab" >DOS <a onclick="deleteOneElement('ab')">X</a></li>
+    <li id="divAeliminar-3" >TRES <a onclick="deleteOneElement(3)">X</a></li>
+</ul>
+<div id="contenedorBoton" style="background-color: salmon; width: 30px; height: 30;"></div>
+<h2>Evento onchange</h2>
+<label>Agrega elemento con onchange</label>
+<select onchange="addElement(this.value)">
+    <option>Seleccione</option>
+    <option value="agregar">Agregar Elemento</option>
+    <option value="ejecutarOtraCosa">otra</option>
+</select>
+<div id="divParaAgrega"></div>
+<div id="divPadre"></div>
+<div id="divParaAgregarTitulo"></div>
+<img onmouseout="ocultarBoton()" 
+     onmouseover="mostrarBoton()" 
+     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8AAAAoKChWVlarq6taWlrKysq3t7eenp7Pz8/5+fmkpKTm5uYeHh6wsLDs7Ozy8vKEhIRlZWU2Njbg4ODZ2dmYmJi/v7/FxcWOjo5RUVE+Pj59fX1ycnIPDw8xMTFJSUl2dnY7OztoaGiJiYkVFRUjIyNQug+OAAAEiklEQVR4nO3Y2XqyOhiGYVAcQQEVUZxr7fkf4h/yJWFwulYXbXeee0fBTC+EAHoeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/a1X4s/CvB/GTEr/0exEjLan6lx2NMnEUTbvrMdQJZ901+Ibuzp+3+vfddpb29I7jZdhRj+NWDz9tprsbue1Ab/fM1vDkV47zx028lwwWJZkIG91Y/3+N+r94mfDgN+3i73USS3Uz1Rfl9+h1jQ69Srj070y+1UkzobcZBx1e1++8SHi+D+hvvtVJK+Hvep5wa1ONsyTO9dTyAy/ZDEvq9yhIZchRPl6HeWPaZaP1drse2X1JfXGJdQNZpj9WtoRr1ltJ3ZXXkacJzXH3L+aHlVp0UrX2mMEmZeTyJhP0TMGTXYjM0Sh9lGPejAJzqMIwHJseBrKkLk0d2Uq9zdXVPeU/nHDfDKgU5fo30Xu/pvoj8eKeXzlXDThbVa+xw5tLQmnBN3finRQ+NorW+v6JhNLJrV526hL2ZETTuDEi/6QK5M1dqunBw4Rmt5x4aedj1arbyYPPs4SZ9BG0y0/qI5h+yedXYb7sXYu1SP3HCXPzWZqbzj5adbtYm54lNJPt7gbYSGgWo3KBHbry6qlon8fedGhuNlm4v5j8ysUlNLNEtzoweUZqapZ1J2Yd7+JSfJbw2bOVSxioK+hYG4ackrFaFt15NwVba6lLuHeHR67Jhfrm5mXPNvdXCY/lCiEz2S6HeqOol031rrB1P3QJpfrFHZ3GvXb81wn1aEYy1nlQmvdshWT0uegrg+XrhN7J1ji4vqZ5o253CatnaptQRu9nTxLq72v/nud9tvY8TxjaLvTn9kGL3SXcum3pY+lF0sXhcUJ5u9v691or58uEielb2lzdP+l3klBuxzu3fbb9m/W/9vCUJK2Ecg5uvZqbjN+/pmn6WbxJKEtoT876zq3Hi6puFwnNvLCvt+Y2uHYvqkd3v4huX62E8qbXa7TXrx2X8buE0kCi51FgT+GkdvS6SGgimQvOzM1yhFM7U2QVSsoDfWomNEXs3UEX1HtOsuPwLqGUPtgf9epylLppZwnNE6GaG/PJ6GK+n/WAbUT/sP40d+BdI6F9HtMR46ue67UsZtJVCdU39bpRT5i6Pq6eXVvj2oHvJGH7WdCcQuXy4Jd1Vk9o694Wh50cAHtdD6OJHX3ocstWPWHVeXmZyHvFaRNldg3rJGH7ZcCvpt317pd98xzere7Fg9bCRkuDRkL3IKrnZvuhvauEpsv7gG61cXKvlbB1wzgl9nFLSrmEUbWzmdAeELld7apity4TelH9/aaov1zHi9ov63LPpDrk2rCWSI8ncX/Prd1a6q5JJZOE5r82u56ZFdtFTOedJlQZx/3y/jcr1u0/D+JgUQ55uTeP+dlZP1TVSkw+z73ZbLd37wHzvnoiX6aRFxSqaGHW4q1aKY/FOPbysoUiNYVTXcY9WOQDdfJO+8yU+vb/l4/9zR9FAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA88g9amTL6A9GPTQAAAABJRU5ErkJggg==">
+
+<hr>
+   
+</div>
+
+<input id="textInput" type="text" onkeypress="mostrarValorInput()" >
+</body>
+
+</html>
