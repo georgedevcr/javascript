@@ -34,7 +34,7 @@ var personas = {
     notificaciones: {
         0: {titulo: "primer notificacion", estado: "enviada"},
         1: {titulo: "Segundo elemento", estado: "rechazada"}
-    }, 
+    },  
     2: { infoPersonal:
         {nombre: "Jorge", 
         apellido: "Torres", 
@@ -62,6 +62,14 @@ function mostrarMisDatos(){
         console.log(personas[i].infoPersonal.nombre);
     }
 }
+
+// 1- Pullrequest se realize en staging
+// 2- Elaborar la paginal listado de de TODOS
+        // "elaborar machote para presentacion"
+        // "Hacer tarea javascript - asignado a: jORGE Torres " 
+// 3- los TODOS deben venir en objetos.
+// 4- Deben subir la tarea a github por medio de un pullrequest (punto 1)
+// para el jueves 7pm 
 
 
 

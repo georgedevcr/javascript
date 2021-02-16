@@ -83,5 +83,25 @@ function mostrarValorInput(){
 
 function funcionCuandoLaPagCarga(){
    alert("Hola mundo");
+   //
+   document.getElementById("divAeliminar-1");
+   document.querySelector(".miClase");
 }
+
+//OBJETOS
+//PERSONA->NOMBRE
+/*
+PERSONA-> APELLIDO
+PERSONA-> AMIGOS
+               -> NOMBRE AMIGO 1
+               -> APELLIDO AMIGO 1
+
+div-> ID
+DIV-> CLASS
+DIV-> DATA
+DIV-> EVENTOS ->
+               ONCLICK
+               ONCHANGE
+
+*/
 
