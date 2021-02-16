@@ -62,6 +62,7 @@
  // 1 branch por persona: con el nombre de la persona
  // 1 pull request cuando lo tenga terminado
  /**
+  * SEGUN EL ID DEL DIV
   * 1- Andres barrientos
   * 2- Carlos Berrrocal
   * 3- Daniel Cordero
